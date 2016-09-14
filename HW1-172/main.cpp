@@ -19,9 +19,9 @@ using namespace std;
 
 int main()
 {
-    //ex02();
-    //ex03();
-    //ex04();
+    ex02();
+    ex03();
+    ex04();
     ex05();
     return 0;
 }
