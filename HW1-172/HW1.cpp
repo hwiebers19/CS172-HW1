@@ -32,10 +32,7 @@ void ex02()
     {
         cout << "x is equal to y" << endl;
     }
-    else
-    {
-        cout << "y is greater than x" << endl;
-    }
+   
     int numberOfShares=0;
     cout << "Enter a value for the number of shares: " ;
     cin >> numberOfShares;
@@ -53,18 +50,22 @@ void ex02()
     
     int bookWidth=0;
     cout << "Enter a book width: " ;
-    cin >> boxWidth;
+    cin >> bookWidth;
     
     if (boxWidth/bookWidth)
     {
-        cout << "The box width is evenly divisable by the book width" ;
+        cout << "The box width is evenly divisable by the book width" << endl;
     }
     
+    else
+    {
+        cout << "The box width is not evenly divisable by the book width";
+    }
     int shelfLifeOfChocolate=0;
     cout << "Enter the shelf life for a box of chocolates: " ;
     cin >> shelfLifeOfChocolate;
     int outsideTemp=0;
-    cout << "Enter the outside tempurature: " <<endl;
+    cout << "Enter the outside tempurature: ";
     cin >> outsideTemp;
     
     if (outsideTemp>90)
@@ -73,6 +74,10 @@ void ex02()
         shelfLifeOfChocolate - 4 == NewShelfLife;
         cout << 'NewShelfLife';
     }
+    else
+    {
+        cout << "The shelf life is " << shelfLifeOfChocolate <<endl;
+    }
     
     
 }
@@ -80,7 +85,7 @@ void ex02()
 void ex03()
 {
     int areaOfASquare=0;
-    cout << "Enter the area of a square "<<endl;
+    cout << "Enter the area of a square ";
     cin >> areaOfASquare;
     double diagonalOfSquare=0;
     diagonalOfSquare = sqrt(2*areaOfASquare);
@@ -99,7 +104,7 @@ void ex03()
     }
     
     // (c) char tab = 'a';
-    
+    // (d) only numbers
     string mailingAdress;
     cout << "Enter your mailing address ";
     cin >> mailingAdress;
@@ -114,43 +119,66 @@ void ex03()
 void ex04()
 {
     int answer=0;
-    cout << "Enter a number 1 and 10: ";
+    cout << "Enter a number between 1 and 10: ";
     cin >> answer;
     if (answer>=1 && answer <=10)
     {
-        cout << "Your answer is correct" << endl;
+        cout << "Your answer is correct " << answer <<endl;
     }
     else
     {
         while(answer<1 || answer>10)
         {
-            cout << "Number is invalid, please try again: " <<endl;
+            cout << "Number is invalid, please try again: " ;
             cin >> answer;
             
         }
     }
     
-    /*int answerCubed=0;
-    answer*answer*answer==answerCubed;
+    int answerCubed=0;
+    answer*answer*answer == 'answerCubed';
     
     cout << "Your answer cubed is " << 'answerCubed' <<endl;
     
-    
-    do{
+   /*
+    do
+     {
+        cout << "*" ;
         
-    }while(
-    */
+     }while(answer<11);
+   */
+    
+    // b
+    //c
+    //d
+    //e
     
 }
+//f
+/*int add()
+{
+    srand(time(NULL));
+    int x=rand()%100;
+    int y=rand()%100;
+    cout << "x is: " << x << endl;
+    cout << "y is: " << y<< endl;
+    
+}
+ */
+    
+    //g
+
 
 void ex05()
 {
     int number=0;
     int integer[number];
+    int size=0;
     for (int i=0; i<size; i++)
     {
-        integer[i]=number();
+       integer[i]=number();
     }
+     
 }
 
 

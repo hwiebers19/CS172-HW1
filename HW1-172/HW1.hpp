@@ -15,6 +15,7 @@
 void ex02();
 void ex03();
 void ex04();
+int add();
 void ex05();
 
 #endif /* HW1_hpp */
